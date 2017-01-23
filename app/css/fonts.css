@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: 'myriad_set_probold_italic';
+    src: url('../fonts/myriad-set-pro_bold-italic-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_probold';
+    src: url('../fonts/myriad-set-pro_bold-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_promedium_italic';
+    src: url('../fonts/myriad-set-pro_medium-italic-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_medium-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_promedium';
+    src: url('../fonts/myriad-set-pro_medium-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_prosemibold_italic';
+    src: url('../fonts/myriad-set-pro_semibold-italic-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_semibold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_prosemibold';
+    src: url('../fonts/myriad-set-pro_semibold-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_prothin';
+    src: url('../fonts/myriad-set-pro_thin-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_proultraLtIt';
+    src: url('../fonts/myriad-set-pro_ultralight-italic-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_ultralight-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myriad_set_proultralight';
+    src: url('../fonts/myriad-set-pro_ultralight-webfont.woff2') format('woff2'),
+    url('../fonts/myriad-set-pro_ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
