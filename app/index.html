@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mob.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/lightgallery/1.3.7/css/lightgallery.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/lightgallery/1.3.7/css/lg-transitions.min.css" rel="stylesheet">
+
 </head>
 <body>
 <header class="header">
     <div class="container header-top">
         <div class="row">
             <div class="col-md-3">
-                <div class="pull-left">
+                <div class="header--top__pull__left">
                     <img src="img/logo.png" alt="" class="header-logo">
                     <p class="header-logo__slogan">
                         Федеральная сеть <br>
@@ -26,28 +30,35 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-5 top-menu">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-top"
-                                aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="menu-top">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Каталог продукции <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Доставка</a></li>
-                            <li><a href="#">Контакты</a></li>
+            <div class="col-md-6 col-sm-12 top-menu">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-top"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="menu-top">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Каталог продукции <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
 
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
-            <div class="col-md-4">
-                <div class="pull-right">
-                    <p class="header--city">Ваш город : <span>Москва</span></p>
+            <div class="col-md-3">
+                <div class="header--top__pull__right">
+                    <p class="header--city">Ваш город
+                        <select name="" id="">
+                            <option value="moscow" selected>Москва</option>
+                            <option value="moscow">СПБ</option>
+                            <option value="moscow">Ростов-на-Дону</option>
+                            <option value="moscow">Воронеж</option>
+                        </select>
+                    </p>
                     <p class="header--phone">+7 (499) 577-00-48</p>
                     <p class="header--work__time"> 10-00 до 22-00 с пн. по вс.</p>
                     <p class="header--street">м. Братиславская, Павелецкая</p>
@@ -61,8 +72,11 @@
                 <h2 class="header--info__h2">Официальная гарантия <span class="number">5</span> лет / собственное
                     производство в России</h2>
                 <h3 class="header--info__h3">Неубиваемые чемоданы для путешествий</h3>
-                <h4 class="header--info__h4">Бесплатная <span>доставка по Москве</span> - за <span class="number">2</span> часа</h4>
-                <p class="header--info__features">Колеса проедут <span class="number">10000</span> км, ручки перенесут до <span class="number">50</span> кг, корпус выдержит нагрузки до <span class="number">150</span> кг</p>
+                <h4 class="header--info__h4">Бесплатная <span>доставка по Москве</span> - за <span
+                        class="number">2</span> часа</h4>
+                <p class="header--info__features">Колеса проедут <span class="number">10000</span> км, ручки перенесут
+                    до <span class="number">50</span> кг, корпус выдержит нагрузки до <span class="number">150</span> кг
+                </p>
             </div>
             <a href="#catalog">
                 <button class="btn-red">Перейти в каталог</button>
@@ -81,6 +95,335 @@
                 <h4 class="block-2--h4">
                     Выберите себе надежного друга для путешествий с помощью нашего каталога пластиковых моделей
                 </h4>
+                <div class="lines hidden">
+                    <span class="line-gray"></span>
+                    <span class="line-yellow"></span>
+                    <span class="line-gray"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ruchnaya-klad">
+                <img src="img/ruchnaya-klad-icon.png" alt="">
+                <p>S - Ручная кладь</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-5 col-md-push-3 col-xs-12">
+                <div class="col-2">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/center-img.jpg" alt="">
+                        </div>
+                        <div class="info ">
+                            <div>
+                                <a rel="popover" data-img="img/test.jpg"><p>Внутренний разделитель</p></a>
+                                <a rel="popover" data-img="http://placehold.it/500x500"><p>Встроенный кодовый замок <br> с системой TSAA</p></a>
+                            </div>
+                            <div>
+                                <a rel="popover" data-img="http://placehold.it/500x500"><p>Перекрестные ремни</p></a>
+                                <a rel="popover" data-img="http://placehold.it/500x500"><p>Ручная кладь</p></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3  col-xs-12 col-md-pull-5">
+                <div class="col-1">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/bags/budget/yellow/s/small/0.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="info-p1">Вес</p>
+                            <p class="info-p2 weight"><span>3.8</span> кг</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/bags/budget/yellow/s/small/1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="info-p1">Объем</p>
+                            <p class="info-p2 volume"><span>105</span> л.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/bags/budget/yellow/s/small/2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="info-p1">Габариты</p>
+                            <p class="info-p2 dimensions"><span>75x50x30</span>см</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="col-3">
+                    <div class="size">
+                        <h5>Выберите размер</h5>
+
+                        <div class="size-item">
+                            <div class="size-place">
+                                <span class="size-place__item active"> 36 л </span>
+                                <span class="size-place__item"> 68 л </span>
+                                <span class="size-place__item"> 94 л </span>
+                                <span class="size-place__item"> 123 л </span>
+                                <span class="size-place__item"> 144 л </span>
+                            </div>
+                            <div class="radio-select">
+                                <div class="radio-button">
+                                    <div class="row  col-xs-offset-1  col-md-offset-0">
+                                        <div class="col-md-2 col-xs-2 "><input type="radio" name="size" value="S" id="s-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="SP" id="s-plus-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="M" id="m-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="MP" id="m-plus-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="L" id="l-size"></div>
+                                    </div>
+                                </div>
+                                <div class="radio-size__name">
+                                    <div class="row  col-xs-offset-1  col-md-offset-0">
+                                        <div class="col-md-2 col-xs-2"><label for="s-size"><p>S</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="s-plus-size"><p>S+</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="m-size"><p>M</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="m-plus-size"><p>M+</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="l-size"><p>L</p></label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="color">
+                        <h5>Выберите Цвет</h5>
+                        <ul class="list-unstyled list-inline">
+                            <li class="color-red active"><a href="#"></a></li>
+                            <li class="color-yellow active"><a href="#"></a></li>
+                            <li class="color-green active"><a href="#"></a></li>
+                            <li class="color-blue"><a href="#"></a></li>
+                            <li class="color-pink"><a href="#"></a></li>
+                            <li class="color-gold"><a href="#"></a></li>
+                            <li class="color-vinous"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h5>Стоимость</h5>
+                        <p class="price-item"><strong>3150</strong> <span>руб</span></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-red">Купить</button>
+                        <button class="btn-red btn-gray">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block-2 block-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="block-2--h3">Новые модели поликарбонатовых чемоданов</h3>
+                <h4 class="block-2--h4">
+                    Выберите себе надежного друга для путешествий с помощью нашего каталога поликарбонатовых моделей
+                </h4>
+                <div class="lines hidden">
+                    <span class="line-gray"></span>
+                    <span class="line-yellow"></span>
+                    <span class="line-gray"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ruchnaya-klad">
+                <img src="img/ruchnaya-klad-icon.png" alt="">
+                <p>S - Ручная кладь</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-5 col-md-push-3 col-xs-12">
+                <div class="col-2">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/center-img.jpg" alt="">
+                        </div>
+                        <div class="info ">
+                            <div>
+                                <a rel="popover" data-img="img/test.jpg"><p>Внутренний разделитель</p></a>
+                                <a rel="popover" data-img="http://placehold.it/500x500"><p>Встроенный кодовый замок <br> с системой TSAA</p></a>
+                            </div>
+                            <div>
+                                <a rel="popover" data-img="http://placehold.it/500x500"><p>Перекрестные ремни</p></a>
+                                <a rel="popover" data-img="http://placehold.it/500x500"><p>Ручная кладь</p></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3  col-xs-12 col-md-pull-5">
+                <div class="col-1">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/37.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="info-p1">Вес</p>
+                            <p class="info-p2 weight"><span>3.8</span> кг</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/39.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="info-p1">Объем</p>
+                            <p class="info-p2 volume"><span>105</span> л.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/39.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="info-p1">Габариты</p>
+                            <p class="info-p2 dimensions"><span>75x50x30</span>см</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="col-3">
+                    <div class="size">
+                        <h5>Выберите размер</h5>
+
+                        <div class="size-item">
+                            <div class="size-place">
+                                <span class="size-place__item active"> 36 л </span>
+                                <span class="size-place__item"> 68 л </span>
+                                <span class="size-place__item"> 94 л </span>
+                                <span class="size-place__item"> 123 л </span>
+                                <span class="size-place__item"> 144 л </span>
+                            </div>
+                            <div class="radio-select">
+                                <div class="radio-button">
+                                    <div class="row  col-xs-offset-1  col-md-offset-0">
+                                        <div class="col-md-2 col-xs-2 "><input type="radio" name="size" value="S" id="bl3s-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="SP" id="bl3s-plus-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="M" id="bl3m-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="MP" id="bl3m-plus-size"></div>
+                                        <div class="col-md-2 col-xs-2"><input type="radio" name="size" value="L" id="bl3l-size"></div>
+                                    </div>
+                                </div>
+                                <div class="radio-size__name">
+                                    <div class="row  col-xs-offset-1  col-md-offset-0">
+                                        <div class="col-md-2 col-xs-2"><label for="bl3s-size"><p>S</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="bl3s-plus-size"><p>S+</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="bl3m-size"><p>M</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="bl3m-plus-size"><p>M+</p></label></div>
+                                        <div class="col-md-2 col-xs-2"><label for="bl3l-size"><p>L</p></label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="color">
+                        <h5>Выберите Цвет</h5>
+                        <ul class="list-unstyled list-inline">
+                            <li class="color-red active"><a href="#"></a></li>
+                            <li class="color-yellow active"><a href="#"></a></li>
+                            <li class="color-green active"><a href="#"></a></li>
+                            <li class="color-blue"><a href="#"></a></li>
+                            <li class="color-pink"><a href="#"></a></li>
+                            <li class="color-gold"><a href="#"></a></li>
+                            <li class="color-darkred"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h5>Стоимость</h5>
+                        <p class="price-item">3150 <span>руб</span></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-red">Купить</button>
+                        <button class="btn-red btn-gray">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block-4">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-12">
+               <h3 class="block-2--h3">Тест-драйв ABS пластиковых чемоданов</h3>
+               <h4 class="block-2--h4">
+                   Посмотрите наши видео и оцените в реальности все испытания, которые ведерживает наша продукция
+               </h4>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+
+                    <a href="#" class="youtube-modal" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s">
+                        <p class="video-title">
+                            <span>Колеса выдержат дорогу от Москвы <br> до Владивостока пешком!</span>
+                        </p>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vIaH35-MLsk"></iframe>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <p class="video-title">
+                        <span>Ручки легко выдержат вес до 50 кг. <br> и даже выше!</span>
+                    </p>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vIaH35-MLsk"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <p class="video-title">
+                        <span>Корпус не сломается даже при <br> нагрузке в с 100 кг!</span>
+                    </p>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vIaH35-MLsk"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <p class="video-title">
+                        <span>Уникальное видео - бросаем <br> чемодан с моста!</span>
+                    </p>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vIaH35-MLsk"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block-2 block-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="block-2--h3">каталог чехлов на чемоданы</h3>
+                <h4 class="block-2--h4">
+                    Чехол для чемодана-отличный способ сохранить ващи Веши от внешних воздействий
+                </h4>
+                <div class="lines hidden">
+                    <span class="line-gray"></span>
+                    <span class="line-yellow"></span>
+                    <span class="line-gray"></span>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -93,72 +436,381 @@
             <div class="col-md-4">
                 <div class="col-1">
                     <div class="item">
-                        <div class="img">
-                            <img src="img/37.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="info-p1">Вес</p>
-                            <p class="info-p2">3.8 кг</p>
-                        </div>
+                        <div class="img"> <img src="img/37.jpg" alt="" class="img-responsive"> </div>
+                        <div class="img"> <img src="img/37.jpg" alt="" class="img-responsive"> </div>
+
                     </div>
                     <div class="item">
-                        <div class="img">
-                            <img src="img/39.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="info-p1">Объем</p>
-                            <p class="info-p2">105 л.</p>
-                        </div>
+                        <div class="img"><img src="img/39.jpg" alt="" class="img-responsive"></div>
+                        <div class="img"><img src="img/39.jpg" alt="" class="img-responsive"></div>
+
                     </div>
                     <div class="item">
+                        <div class="img"><img src="img/39.jpg" alt="" class="img-responsive"></div>
+                        <div class="img"><img src="img/39.jpg" alt="" class="img-responsive"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-2">
+                    <div class="item center-block">
                         <div class="img">
-                            <img src="img/39.jpg" alt="">
+                            <img src="img/center-img.jpg" alt="" class="img-responsive center-block">
                         </div>
-                        <div class="info">
-                            <p class="info-p1">Габариты</p>
-                            <p class="info-p2">75x50x30см</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-3">
+                    <div class="size">
+                        <h5>Выберите размер</h5>
+
+                        <div class="size-item">
+                            <div class="size-place hidden">
+                                <span class="size-place__item active"> 36 л </span>
+                                <span class="size-place__item"> 68 л </span>
+                                <span class="size-place__item"> 94 л </span>
+                                <span class="size-place__item"> 123 л </span>
+                                <span class="size-place__item"> 144 л </span>
+                            </div>
+                            <div class="radio-select">
+                                <div class="radio-button">
+                                    <div class="row">
+                                        <div class="col-md-2"><input type="radio" name="size" value="S" id="bl5s-size"></div>
+                                        <div class="col-md-2"><input type="radio" name="size" value="SP" id="bl5s-plus-size"></div>
+                                        <div class="col-md-2"><input type="radio" name="size" value="M" id="bl5m-size"></div>
+                                        <div class="col-md-2"><input type="radio" name="size" value="MP" id="bl5m-plus-size"></div>
+                                        <div class="col-md-2"><input type="radio" name="size" value="L" id="bl5l-size"></div>
+                                    </div>
+                                </div>
+                                <div class="radio-size__name">
+                                    <div class="row">
+                                        <div class="col-md-2"><label for="bl5s-size"><p>S</p></label></div>
+                                        <div class="col-md-2"><label for="bl5s-plus-size"><p>S+</p></label></div>
+                                        <div class="col-md-2"><label for="bl5m-size"><p>M</p></label></div>
+                                        <div class="col-md-2"><label for="bl5m-plus-size"><p>M+</p></label></div>
+                                        <div class="col-md-2"><label for="bl5l-size"><p>L</p></label></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
+                    <div class="color">
+                        <h5>Выберите Цвет</h5>
+                        <ul class="list-unstyled list-inline">
+                            <li class="color-red active"><a href="#"></a></li>
+                            <li class="color-yellow active"><a href="#"></a></li>
+                            <li class="color-green active"><a href="#"></a></li>
+                            <li class="color-blue"><a href="#"></a></li>
+                            <li class="color-pink"><a href="#"></a></li>
+                            <li class="color-gold"><a href="#"></a></li>
+                            <li class="color-darkred"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h5>Стоимость</h5>
+                        <p class="price-item">3150 <span>руб</span></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-red">Купить</button>
+                        <button class="btn-red btn-gray">Купить в один клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="production">
+    <div class="container">
+        <div class="row">
+            <h3 class="block-2--h3">собственное производство</h3>
+            <h4 class="block-2--h4">Красивый дизайн и надежные материалы - гарантия отличного настроения в отпуске и
+                командировке</h4>
+            <div class="lines">
+                <span class="line-gray"></span>
+                <span class="line-red"></span>
+                <span class="line-gray"></span>
+            </div>
+            <div class="production-gallery gal">
+                <li data-src="img/production-1.jpg" class="list-unstyled "><img src="img/production-1.jpg" alt="" class="center-block img-responsive"></li>
+                <li data-src="img/production-2.jpg" class="list-unstyled "><img src="img/production-2.jpg" alt="" class="center-block img-responsive"></li>
+                <li data-src="img/production-3.jpg" class="list-unstyled "><img src="img/production-3.jpg" alt="" class="center-block img-responsive"></li>
+                <li data-src="img/production-4.jpg" class="list-unstyled "><img src="img/production-4.jpg" alt="" class="center-block img-responsive"></li>
+                <li data-src="img/production-5.jpg" class="list-unstyled "><img src="img/production-5.jpg" alt="" class="center-block img-responsive"></li>
+                <li data-src="img/production-6.jpg" class="list-unstyled "><img src="img/production-6.jpg" alt="" class="center-block img-responsive"></li>
+            </div>
+            <p class="production-street">
+                Адрес сборки чемодана: Московская область, г.Домодедово, ул. Талалихина дом 31
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="technology">
+    <div class="container">
+        <div class="row">
+            <h3 class="block-2--h3">Технологии и материалы</h3>
+            <h4 class="block-2--h4">Все представленные здесь модели являются нашими собственными разработками </h4>
+            <div class="lines">
+                <span class="line-gray"></span>
+                <span class="line-red"></span>
+                <span class="line-gray"></span>
+            </div>
+
+            <div class="col-md-6 col-md-push-3">
+                <div class="technology-item abs-plastik">
+
+                    <img src="img/abs-plastic.jpg" alt="" class="technology-img">
+                    <div class="text">
+                        <p class="technology-title">Корпус из ABS-пластика</p>
+                        <p class="technology-info">
+                            Изготавливается путем формовки из листов абс пластика, толщиной 2,3 миллиметра.
+                        </p>
+                        <p class="technology-info">
+                            Идеально подходит для России устойчив к морозам и нагрузкам до 120 кг.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-pull-6">
+                <div class="technology-item zamok-code">
+                    <img src="img/zamok-code.jpg" alt="" class="technology-img">
+                    <div class="text">
+                        <p class="technology-title">встроенный кодовый замок</p>
+                        <p class="technology-info">
+                            Кодовый замок - это непременный атрибут любого чемодана, сумки-тележки или дорожной сумки,
+                            для препятствия открытию, а значит и хищения Вашего личного имущества в гостинице или
+                            аэропорту
+                        </p>
+                        <p class="technology-info">
+                            Изначальный заводской код на любом чемодана - три ноля (000)
+                            Кодовый замок - это непременный атрибут любого чемодана, сумки-тележки или дорожной сумки
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="technology-item wheels">
+                    <div class="text">
+                        <p class="technology-title">Резиновые колесики
+                            с подшипниками</p>
+                        <p class="technology-info">
+                            Материал колес чемодана – резина, представляющая собой очень упругий и эластичный материал.
+                            Колеса,
+                            изготовленные из других материалов, могут быстро
+                            изнашиваться или обладать высоким сопротивлением при
+                            движении. Колеса из прорезиненных материалов являются
+                            самыми долговечными и износостойкими из всех
+                            существующих сегодня. Для этого применяются самые
+                            современные виды материалов при изготовлении колес.
+                        </p>
+                    </div>
+
+                    <img src="img/wheels.jpg" alt="" class="technology-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map-shipping">
+    <div class="container">
+        <div class="row">
+            <h3 class="block-2--h3">Федеральная сеть</h3>
+            <h4 class="block-2--h4">15 магазинов по всей России</h4>
+            <div class="lines">
+                <span class="line-gray"></span>
+                <span class="line-red"></span>
+                <span class="line-gray"></span>
+            </div>
+            <p class="map--shipping__title">Бесплатная доставка по Москве - за 2 часа</p>
+
+            <div class="map-shipping__address">
+                <div class="map-shipping__item">
+                    <p class="address-item__city">г. Москва</p>
+                    <p class="address-item__street">
+                        Озерковская набережная, <br>
+                        дом 48-50, стр.2, подъезд 7А
+                    </p>
+                    <p class="address-item__phone"><span>Телефон:</span> +7 (499) 577-00-48</p>
+                    <p class="address-item__time"><span>График работы:</span> с 10-00 до 19-00 с пн. по сб.</p>
+                </div>
+                <div class="map-shipping__item">
+                    <p class="address-item__city">г. Москва</p>
+                    <p class="address-item__street">
+                        Озерковская набережная, <br>
+                        дом 48-50, стр.2, подъезд 7А
+                    </p>
+                    <p class="address-item__phone"><span>Телефон:</span> +7 (499) 577-00-48</p>
+                    <p class="address-item__time"><span>График работы:</span> с 10-00 до 19-00 с пн. по сб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="instagram">
+    <div class="container">
+        <div class="row">
+            <h3 class="block-2--h3">Фотографии реальных чемоданов</h3>
+            <h4 class="block-2--h4">Присоединяйтесь к нам в соц. сетях и становитесь участниками акций, получайте
+                подарки и призы</h4>
+            <div class="lines">
+                <span class="line-gray"></span>
+                <span class="line-red"></span>
+                <span class="line-gray"></span>
+            </div>
+            <img src="img/instagram-photos.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="social">
+    <div class="container">
+        <div class="row">
+            <h3 class="block-2--h3">мы в социальных сетях</h3>
+            <h4 class="block-2--h4"> Присоединяйтесь к нам в соц. сетях и становитесь участниками акций, получайте
+                подарки и призы</h4>
+            <div class="lines">
+                <span class="line-gray"></span>
+                <span class="line-red"></span>
+                <span class="line-gray"></span>
+            </div>
+            <ul class="list-unstyled social-icons">
+
+                <li>
+                    <a href=""><img src="img/vk-icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/insta-icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/fb-icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/ok-icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/yout-icon.png" alt=""></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<section class="address">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="address-item">
+                    <div class="address-title">
+                        <img src="img/address-store-icon1.jpg" alt="" class="address-title__icon">
+
+                        <p class="address--store__description">
+                            <span class="address--store__name">Магазин</span> <br>
+                            Здесь Вы можете приехать и купить оптовую партию <br> продукции
+                        </p>
+                    </div>
+                    <div class="address-street">
+                        <p>
+                            Адрес: г. Москва, метро Братиславская, <br>
+                            Ул. Братиславская дом 22 <br>
+                            Телефон: +7 (499) 577-00-48 <br>
+                            Email: info@myxbag.ru <br>
+                            График работы: с 10-00 до 22-00 с пн. по вс.
+                        </p>
+                    </div>
+                    <div class="address-map">
+                        <img src="img/map.jpg" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="col-2">
-                    <div class="item">
-                        <div class="img">
-                            <img src="img/center-img.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            Внутренний разделитель
+                <div class="address-item">
+                    <div class="address-title">
+                        <img src="img/address-store-icon1.jpg" alt="" class="address-title__icon">
 
-                            Встроенный кодовый замок
-                            с системой TSAA
-
-                            Перекрестные ремни
-                            Перекрестные ремни
-                            Перекрестные ремни
-                            Перекрестные ремни
-                            Перекрестные ремни
-                            Перекрестные ремни
-                            Перекрестные ремни
-                            Перекрестные ремни
-
-                            Ручная кладь
-                        </div>
+                        <p class="address--store__description">
+                            <span class="address--store__name">Магазин</span> <br>
+                            Здесь Вы можете приехать и купить оптовую партию <br> продукции
+                        </p>
                     </div>
+                    <div class="address-street">
+                        <p>
+                            Адрес: г. Москва, метро Братиславская, <br>
+                            Ул. Братиславская дом 22 <br>
+                            Телефон: +7 (499) 577-00-48 <br>
+                            Email: info@myxbag.ru <br>
+                            График работы: с 10-00 до 22-00 с пн. по вс.
+                        </p>
+                    </div>
+                    <div class="address-map">
+                        <img src="img/map.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="footer--p1">Общество с ограниченной ответственностью "АЛЬФА"</p>
+                <p class="footer--p2">
+                    ИНН: 7718275886 <br>
+                    ОГРН: 1157746875703
+                </p>
+                <p class="footer--p3">
+                    КПП: 771801001 <br>
+                    Юридический адрес: 107564, г. Москва, <br>
+                    ул. Миллионная, д. 13, стр. 2
+                </p>
+                <div class="footer-buttons">
+                    <a href="#" class="abtn">
+                        <button class="btn-red">стать партнером</button>
+                    </a>
+                    <a href="#" class="abtn">
+                        <button class="btn-red">купить оптом</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<section class="block-3">
-    <div class="container">
-        <div class="row">
+    <div class="footer-bottom">
+        <p>
+            <span class="copy">MyXbag © 2010 - 2017</span> <br>
+            Копирование материалов сайта возможно только с разрешения владельца ресурса
+        </p>
+    </div>
+</footer>
 
+<!--Youtube Modal-->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="350" src=""></iframe>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+</div>
+<!--Youtube Modal-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lightgallery/1.3.7/js/lightgallery.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

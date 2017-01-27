@@ -1,0 +1,170 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .header--phone {
+    font-size: 24px; }
+  .header--info__h3 {
+    font-size: 56px; }
+  .header--info__h4 {
+    font-size: 50px; }
+  .header-top {
+    margin-bottom: 0; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .address-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header-logo {
+    display: block;
+    margin: 0 auto; }
+  .header--top__pull__right {
+    float: none;
+    text-align: center; }
+  .navbar-nav {
+    float: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    float: left;
+    display: block; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 425px) {
+  .header--info__h3 {
+    font-size: 28px; }
+  .header--info__h2 {
+    font-size: 18px; }
+  .header--work__time, .header--phone, .header--city {
+    margin-bottom: 5px; }
+  .header--info__h4 {
+    font-size: 30px; }
+  .header--info__features {
+    font-size: 16px;
+    margin-bottom: 40px; }
+  .arrow-down {
+    margin-bottom: 50px; }
+  .block-2--h3 {
+    font-size: 22px; }
+  .block-2--h4 {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .col-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .col-1 .item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .col-1 .img {
+      min-width: inherit;
+      max-height: 170px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 20px;
+      margin-right: 5px; }
+      .col-1 .img img {
+        max-width: 100%; }
+  .col-2 .item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+  .col-2 img {
+    max-width: 100%; }
+  .col-3 {
+    margin-left: 0; }
+  .col-3 .size-item .size-place {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .col-3 .size-item .size-place .size-place__item {
+    margin-bottom: 10px; }
+  .col-3 .color ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .col-3 .price, .col-3 h5 {
+    text-align: center; }
+  .col-3 button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .col-2 .info p {
+    font-size: 12px; }
+  .block-4 .video-title {
+    font-size: 18px;
+    height: 85px; }
+  .production, .map-shipping, .social, .address {
+    padding-top: 20px; }
+  .zamok-code .technology-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .abs-plastik .technology-img {
+    float: none;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .abs-plastik .text {
+    position: static; }
+  .technology-item {
+    margin-bottom: 40px; }
+  .technology-img {
+    display: block;
+    margin: 0 auto; }
+  .technology {
+    margin-bottom: 0; }
+  .map-shipping .lines {
+    margin-bottom: 20px; }
+  .map--shipping__title {
+    font-size: 34px;
+    margin-bottom: 20px; }
+  .footer .footer-buttons {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .footer .abtn {
+    margin-bottom: 20px; }
+  .footer .btn-red {
+    margin-right: 0; } }
+
+@media only screen and (max-width: 320px) {
+  .col-1 .item .img {
+    height: 125px; } }

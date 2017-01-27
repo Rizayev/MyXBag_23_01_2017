@@ -29,7 +29,10 @@ header
 .navbar-toggle .icon-bar
   background: #000
 // MENU BUTTON
-
+.header--top__pull__left
+  float: left
+.header--top__pull__right
+  float: right
 .top-menu
   ul
     li
@@ -47,13 +50,15 @@ header
   font-weight: 500
   font-size: 18px
   margin-bottom: 16px
-  span
-    font-size: 36px
-    text-decoration: underline
+  select
+    width: auto
+    background: transparent
+    font-size: 22px
+    color: #fff
 .header--phone
   color: #ffffff
   font-family: "Open Sans"
-  font-size: 36px
+  font-size: 30px
   font-weight: 700
   line-height: 24px
   margin-bottom: 20px
@@ -106,7 +111,7 @@ header
   margin-bottom: 160px
   span.number
     color: #ee3e1b
-.btn-red
+.btn-red,.btn-gray
   // Style for "Rounded Re"
   width: 227px
   height: 56px
@@ -121,6 +126,8 @@ header
   font-weight: 700
   text-transform: uppercase
   margin-bottom: 30px
+.btn-gray
+  background-color: #a7a7a7
 .arrow-down
   display: block
   margin: 0 auto
@@ -130,13 +137,14 @@ header
 .block-2
   background-color: #efefef
   min-height: 100vh
-  text-align: center
   padding-top: 43px
+  padding-bottom: 50px
 .block-2--h3
   font-family: "myriad_set_promedium"
   font-size: 36px
   font-weight: 400
   text-transform: uppercase
+  text-align: center
   span
     color: #ee3e1b
 .block-2--h4
@@ -144,11 +152,14 @@ header
   color: #6a6a6a
   font-size: 18px
   margin-bottom: 100px
+  text-align: center
 .block-2
+  h4
+    margin-bottom: 50px
   .ruchnaya-klad
     display: flex
     margin: 0 auto
-    margin-bottom: 17px
+    margin-bottom: 25px
     justify-content: center
     align-items: center
     img
@@ -161,45 +172,470 @@ header
       text-transform: uppercase
       vertical-align: top
       margin: 0
-  .col-1
-    .item
-      display: flex
-      align-items: center
-      margin-bottom: 21px
-    .img
-      background: #fff
-      min-width: 148px
-      height: 179px
-      margin-right: 32px
-      border: 1px solid #dbdbdb
-      display: flex
-      align-items: center
-      img
-        display: block
-        margin: 0 auto
-    p
-      text-align: left
-      font-family: 'myriad_set_promedium'
-    .info-p1
-      color: #ee3e1b
-      font-size: 18px
-      font-weight: bold
-      text-transform: uppercase
-      margin-bottom: 15px
-    .info-p2
-      color: #000
-      font-size: 24px
-  .col-2
-    .item
-      width: 476px
-      height: 579px
-      border: 1px solid #ffcc00
-      background-color: #ffffff
-      img
-        display: block
-        margin: 20px auto
-    .info
-      border-top: 1px solid #ffcc00
-      background-color: #efefef
+.col-1
+  .item
+    display: flex
+    align-items: center
+    margin-bottom: 21px
+  .img
+    background: #fff
+    min-width: 148px
+    height: 179px
+    margin-right: 15px
+    border: 1px solid #dbdbdb
+    display: flex
+    align-items: center
+    img
+      display: block
+      margin: 0 auto
+  p
+    text-align: left
+    font-family: 'myriad_set_promedium'
+  .info-p1
+    color: #ee3e1b
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 15px
+  .info-p2
+    color: #000
+    font-size: 20px
+.col-2
+  .item
+    width: 476px
+    height: 579px
+    border: 1px solid #ffcc00
+    background-color: #ffffff
+    img
+      display: block
+      margin: 13px auto
+  .info
+    min-height: 95px
+    border-top: 1px solid #ffcc00
+    background-color: #efefef
+    text-align: left
 
+    display: flex
+    justify-content: space-around
+    align-items: center
+    a
+      color: #000
+      cursor: pointer
+    p
+      font-family: "myriad_set_probold"
+      font-size: 14px
+      line-height: 14px
+      text-decoration: underline
+      position: relative
+      &:before
+        background-image: url('../img/icon-check.png')
+        background-size: 13px 13px
+        display: inline-block
+        position: absolute
+        left: -20px
+        top: 2px
+        width: 13px
+        height: 13px
+        content: ' '
+.col-3
+  margin-left: 20px
+  h5
+    color: #000000
+    font-family: "myriad_set_promedium"
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    text-align: left
+  .color
+    margin-bottom: 50px
+    li
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      margin-right: 5px
+      cursor: pointer
+      position: relative
+    .color-red
+      background: red
+    .color-yellow
+      background-color: #ffcc00
+    .color-green
+      background-color: #00cc33
+    .color-blue
+      background-color: #1127b7
+    .color-pink
+      background-color: #dc1a88
+    .color-gold
+      background-color: #c8a353
+    .color-vinous
+      background: #590000
+    .active:before
+      content: url("../img/active-color.png")
+      position: absolute
+      top: 7px
+      left: 8px
+
+  .price
+    margin-bottom: 50px
+  .price-item
+    color: #000000
+    font-family: "myriad_set_promedium"
+    font-weight: 400
+    text-transform: uppercase
+    // Text style for "31, 50"
+    font-size: 48px
+    span
+      font-size: 18px
+  button
+    margin-bottom: 15px
+  .size-item
+    margin-bottom: 36px
+    .size-place
+      display: flex
+      align-content: center
+      margin-bottom: 25px
+      .size-place__item
+        text-align: center
+        margin-right: 5px
+        width: 60px
+        height: 24px
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.35)
+        border-radius: 2px
+        border: 1px solid #ee3e1b
+        background-color: #ffffff
+        font-size: 14px
+      .active
+        background: #ee3e1b
+        color: #fff
+      .active::before
+        content: url("../img/plane.png")
+    .radio-select
+      margin-left: 20px
+    .radio-button
+      margin-bottom: 10px
+    p
+      color: #000000
+      font-family: "myriad_set_promedium"
+      line-height: 22px
+      font-size: 22px
+      font-weight: 400
+      text-transform: uppercase
+    .radio-size__name
+      label
+        cursor: pointer
 //BLOCK 2
+
+
+
+//BLOCK 3
+
+.block-3
+  background: #fff
+
+
+
+
+//BLOCK 4
+.block-4
+  background: url("../img/video-bg.jpg")
+  min-height: 100vh
+  padding-top: 40px
+  padding-bottom: 50px
+  h3,h4
+    color: #fff
+    text-align: center
+  .block-2--h4
+    color: #6a6a6a
+    margin-bottom: 80px
+  .embed-responsive
+    margin-bottom: 22px
+  .youtube-modal
+    height: 100%
+  .video-title
+    width: 100%
+    height: 106px
+    position: absolute
+
+    color: #ffffff
+    text-align: left
+    font-family: "myriad_set_promedium"
+    font-size: 26px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+
+    display: flex
+    align-items: center
+    padding-left: 37px
+
+    background-color: #ee3e1b
+    opacity: 0.9
+    z-index: 99
+//BLOCK 4
+.block-5
+  .col-1 .item
+    justify-content: space-between
+  .col-2 .item
+    width: auto
+    display: flex
+    align-items: center
+    justify-content: center
+  .col-3
+    display: flex
+    flex-direction: column
+// production
+
+.production
+  background: url("../img/production-bg.jpg")
+  padding-top: 80px
+  h3,h4
+    text-align: center
+  h3
+    color: #fff
+  h4
+    margin-bottom: 40px
+    color: #adadad
+  .lines
+    margin-bottom: 50px
+
+.production-street
+  text-align: center
+  color: #adadad
+  font-family: "myriad_set_promedium"
+  font-size: 16px
+  margin-bottom: 70px
+.production-gallery
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  margin-bottom: 50px
+  img
+    width: 160px
+    height: 160px
+    box-shadow: 0 0 3px rgba(255, 83, 7, 0.35)
+    border: 1px solid #ee3e1b
+    background-color: #ee3e1b
+    cursor: pointer
+    //margin: 0 5px
+    margin-bottom: 20px
+
+
+
+//technology
+
+.technology
+  padding-top: 80px
+  margin-bottom: 100px
+  h3,h4
+  text-align: center
+  h4
+    margin-bottom: 45px
+.technology-item
+  text-align: left
+
+.technology-img
+  max-width: 100%
+.technology-title
+  color: #000000
+  font-family: "myriad_set_promedium"
+  font-size: 18px
+  font-weight: 500
+  text-transform: uppercase
+.technology-info
+  color: #6a6a6a
+  font-family: "myriad_set_promedium"
+  font-size: 14px
+
+
+.zamok-code .technology-img
+  margin-bottom: 50px
+
+.abs-plastik .technology-img
+  float: left
+  width: 290px
+  margin-left: 50px
+.abs-plastik
+  .text
+    position: relative
+    left: -100px
+
+.wheels
+  .text
+    margin-bottom: 50px
+  .technology-title
+    margin-bottom: 30px
+
+//map-shipping
+
+.map-shipping
+  background: url("../img/ship-bg.jpg") no-repeat
+  background-position: center center
+  background-size: cover
+  min-height: 100vh
+  padding-top: 80px
+  padding-bottom: 50px
+  h3,h4
+    text-align: center
+    text-transform: uppercase
+  h3
+    color: #fff
+  h4
+    color: #adadad
+    text-transform: none
+    margin-bottom: 40px
+  .lines
+    margin-bottom: 0
+
+.map--shipping__title
+  text-shadow: 14px 14px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.04)
+  color: #ffffff
+  font-family: "myriad_set_prothin"
+  font-size: 60px
+  font-weight: 100
+  text-align: center
+
+.map-shipping__address
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  flex-basis: 300px
+.map-shipping__item
+  margin: 0 10px
+  height: 199px
+  box-shadow: 14px 14px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.04)
+  border-radius: 2px
+  background-color: #ee3e1b
+  padding-top: 20px
+  padding-left: 24px
+  padding-right: 24px
+  margin-bottom: 20px
+  p
+    color: #fff
+    font-family: "myriad_set_promedium"
+    font-size: 18px
+    span
+      color: #efff81
+      font-size: 14px
+
+  .address-item__city
+    font-size: 24px
+  .address-item__street
+    font-size: 14px
+    color: #efff81
+  .address-item__phone
+  .address-item__time
+
+//instagram
+.instagram
+  padding-top: 50px
+  margin-bottom: 80px
+  h3,h4
+    text-align: center
+  h4
+    margin-bottom: 40px
+
+//social
+.social
+  background-color: #efefef
+  padding-top: 77px
+  h3,h4
+    text-align: center
+  h4
+    margin-bottom: 40px
+.social-icons
+  display: flex
+  justify-content: center
+  margin-bottom: 85px
+  li
+    margin-right: 32px
+    &:first-child
+      margin-left: 32px
+    img
+      max-width: 100%
+
+//address
+
+.address
+  padding-top: 117px
+
+.address-title
+  display: flex
+  align-items: center
+  margin-bottom: 50px
+.address-title__icon
+  margin-right: 30px
+.address--store__name
+  color: #000
+  font-family: "myriad_set_promedium"
+  font-size: 30px
+  text-transform: uppercase
+.address--store__description
+  color: #000000
+  font-family: "myriad_set_promedium"
+  font-size: 14px
+  text-transform: uppercase
+.address-street
+  margin-bottom: 36px
+  p
+    color: #6a6a6a
+    font-family: "myriad_set_promedium"
+    font-size: 18px
+.address-map
+  margin-bottom: 70px
+
+
+//footer
+.footer
+  background: url("../img/footer-bg.jpg")
+  background-size: cover
+  padding-top: 111px
+  p
+    text-align: center
+    color: #fff
+    font-family: "myriad_set_promedium"
+    font-size: 24px
+    margin-bottom: 40px
+  .footer-buttons
+    display: flex
+    justify-content: center
+    flex-basis: 227px
+    margin-bottom: 54px
+  .btn-red
+    margin-right: 25px
+    margin-bottom: 0
+.footer-bottom
+  height: 88px
+  background: #000
+  display: flex
+  justify-content: center
+  align-items: center
+  p
+    opacity: 0.75
+    font-family: "myriad_set_promedium"
+    line-height: 16px
+    color: #999999
+    font-size: 14px
+    margin-bottom: 0
+    span
+      color: #ffffff
+      font-size: 16px
+
+//footer
+
+
+.lines
+  display: flex
+  justify-content: center
+  margin-bottom: 40px
+  .line-gray
+    min-width: 120px
+    display: block
+    border: 1px solid #999
+    margin-left: 20px
+    margin-right: 20px
+  .line-red,.line-yellow
+    min-width: 120px
+    display: block
+    border: 1px solid #e74c3c
+  .line-yellow
+    border-color: #ffcc00
